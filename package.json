@@ -1,9 +1,9 @@
 {
-    "name": "@perkd/fe-tsconfig",
+    "name": "@dgtlmonk/fe-configs",
     "version": "1.0.0",
     "description": "Shared TypeScript config for Perkd frontend projects",
     "license": "MIT",
-    "repository": "perkd/fe-tsconfig",
+    "repository": "@dgtlmonk/fe-configs",
     "author": {
         "name": "Joel Pablo",
         "email": "joel@waveo.com"
