@@ -14,10 +14,11 @@ $ npm install --save-dev @perkd/fe-tsconfig
 
 ```json
 {
-	"extends": "@perkd/fe-tsconfig/tsconfig.json",
+	"extends": "@perkd/fe-configs/tsconfig.json",
 	"compilerOptions": {
 		"outDir": "dist"
-	}
+	},
+    "include": ["./src"]
 }
 ```
 
@@ -25,7 +26,7 @@ When you are targeting a higher browser support, check the relevant ECMAScript v
 
 ```json
 {
-	"extends": "@perkd/fe-tsconfig/tsconfig.json",
+	"extends": "@perkd/fe-configs/tsconfig.json",
 	"compilerOptions": {
 		"outDir": "dist",
 		"target": "ESNext"

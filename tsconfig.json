@@ -20,7 +20,7 @@
       // Report errors on unused local variables.
       "noUnusedLocals": true,
       "noEmit": true,
-      "jsx": "react-jsx",
+      "jsx": "react",
       "noFallthroughCasesInSwitch": true,
       "noUncheckedIndexedAccess": true,
       "noEmitOnError": true,
@@ -28,6 +28,6 @@
       "paths": {
         "*": ["src/*"]
       }
-    }
+    },
   }
   
