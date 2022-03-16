@@ -1,11 +1,11 @@
 # tsconfig
 
-> Ideal [TypeScript config](https://www.typescriptlang.org/docs/handbook/tsconfig-json.html) for Perkd frontend projectsk 
+> Ideal [TypeScript config](https://www.typescriptlang.org/docs/handbook/tsconfig-json.html) for Perkd frontend projects 
 
 ## Install
 
 ```
-$ install --save-dev @perkd/fe-tsconfig
+$ npm install --save-dev @perkd/fe-tsconfig
 ```
 
 ## Usage
