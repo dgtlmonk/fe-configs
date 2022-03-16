@@ -1,0 +1,18 @@
+{
+    "name": "@perkd/fe-tsconfig",
+    "version": "1.0.0",
+    "description": "Shared TypeScript config for Perkd frontend projects",
+    "license": "MIT",
+    "repository": "perkd/fe-tsconfig",
+    "author": {
+        "name": "Joel Pablo",
+        "email": "joel@waveo.com"
+    },
+    "main": "tsconfig.json",
+    "engines": {
+        "node": ">=12"
+    },
+    "files": [
+        "tsconfig.json"
+    ]
+}

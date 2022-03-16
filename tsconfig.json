@@ -1,0 +1,34 @@
+{
+    "compilerOptions": {
+      "baseUrl": "./",
+      "target": "ES2020",
+      "pretty": true,
+      "lib": ["DOM", "DOM.Iterable", "ES2020"],
+      "allowJs": true,
+      "skipLibCheck": false,
+      "esModuleInterop": true,
+      "allowSyntheticDefaultImports": true,
+      "strict": false,
+      "forceConsistentCasingInFileNames": true,
+      "module": "ES2020",
+      "moduleResolution": "Node",
+      "noImplicitOverride": true,
+      "resolveJsonModule": true,
+      "isolatedModules": false,
+      // Report errors on unused parameters in functions.
+      "noUnusedParameters": true,
+      // Report errors on unused local variables.
+      "noUnusedLocals": true,
+      "noEmit": true,
+      "jsx": "react-jsx",
+      "noFallthroughCasesInSwitch": true,
+      "noUncheckedIndexedAccess": true,
+      "noEmitOnError": true,
+      "useDefineForClassFields": true,
+      "paths": {
+        "*": ["src/*"]
+      }
+    },
+    "include": ["./src"]
+  }
+  
