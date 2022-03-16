@@ -13,6 +13,7 @@
         "node": ">=12"
     },
     "files": [
-        "tsconfig.json"
+        "tsconfig.json",
+        ".prettierrc"
     ]
 }
