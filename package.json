@@ -16,7 +16,8 @@
         "@typescript-eslint/eslint-plugin": "^5.15.0",
         "@typescript-eslint/parser": "^5.15.0",
         "eslint": ">= 4",
-        "eslint-plugin-react": "^7.29.4"
+        "eslint-plugin-react": "^7.29.4",
+        "pkg-up": "^4.0.0"
     },
     "main": "tsconfig.json",
     "files": [
@@ -27,5 +28,4 @@
     "scripts": {
         "postinstall": "node bin/install.js"
     }
-
 }

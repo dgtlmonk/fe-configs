@@ -2,7 +2,7 @@
 
 import fs from 'fs'
 import path from 'path'
-import pkgUp from 'pkg-up'
+import { pkgUp } from 'pkg-up'
 import { fileURLToPath } from 'url'
 
 const __dirname = path.dirname(fileURLToPath(
