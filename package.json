@@ -22,8 +22,8 @@
         "eslint": ">= 4"
     },
     "files": [
-        "./tsconfig/tsconfig.json",
-        "./prettier/.prettierrc",
+        "tsconfig.json",
+        ".prettierrc",
         "./eslint-config/*"
     ],
     "scripts": {
