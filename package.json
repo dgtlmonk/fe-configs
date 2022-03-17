@@ -8,7 +8,6 @@
         "name": "Joel Pablo",
         "email": "joel@waveo.com"
     },
-    "main": "./eslint/index.js",
     "engines": {
         "node": ">=12"
     },
@@ -24,7 +23,6 @@
     "files": [
         "./tsconfig/tsconfig.json",
         "./prettier/.prettierrc",
-        "./eslint/index.js",
-        "./eslint/.eslintrc"
+        "./eslint-config/*"
     ]
 }

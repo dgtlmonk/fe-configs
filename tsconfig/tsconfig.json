@@ -25,7 +25,8 @@
       "useDefineForClassFields": true,
       "paths": {
         "*": ["src/*"]
-      }
-    },
+      },
+      "outDir": "dist"
+    }
   }
   
