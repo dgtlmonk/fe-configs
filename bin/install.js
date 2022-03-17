@@ -11,7 +11,7 @@ const __dirname = path.dirname(fileURLToPath(
 const module = "@dgtlmonk/fe-configs/tsconfig"
 
 const TSCONFIG_JSON_CONTENT = `{
-  "extends": ${module},
+  "extends": "${module}",
   "compilerOptions": {
     "outDir": "dist",
   },
