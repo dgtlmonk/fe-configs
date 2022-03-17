@@ -27,7 +27,7 @@
         "./eslint-config/*"
     ],
     "scripts": {
-        "copy:config": "echo hey"
+        "postinstall": "echo hey"
     }
 
 }
