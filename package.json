@@ -26,9 +26,6 @@
         "tsconfig.json",
         ".prettierrc",
         "./eslint-config/*"
-    ],
-    "scripts": {
-        "postinstall": "echo hey"
-    }
+    ]
 
 }
