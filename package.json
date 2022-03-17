@@ -12,10 +12,11 @@
         "node": ">=12"
     },
     "dependencies": {
-        "eslint": "^8.11.0",
-        "eslint-plugin-react": "^7.29.4",
         "@typescript-eslint/eslint-plugin": "^5.15.0",
-        "@typescript-eslint/parser": "^5.15.0"
+        "@typescript-eslint/parser": "^5.15.0",
+        "eslint": ">= 4",
+        "eslint-plugin-react": "^7.29.4",
+        "husky": "^7.0.4"
     },
     "peerDependencies": {
         "eslint": ">= 4"
@@ -24,5 +25,9 @@
         "./tsconfig/tsconfig.json",
         "./prettier/.prettierrc",
         "./eslint-config/*"
-    ]
+    ],
+    "scripts": {
+        "copy:config": "echo hey"
+    }
+
 }
