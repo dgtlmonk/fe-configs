@@ -5,7 +5,7 @@
 ## Install
 
 ```
-$ npm install --save-dev @perkd/fe-tsconfig
+$ npm install --save-dev @dgtlmonk/fe-tsconfig
 ```
 
 ## Usage & Configuration
@@ -14,11 +14,7 @@ $ npm install --save-dev @perkd/fe-tsconfig
 
 ```json
 {
-	"extends": "@perkd/fe-configs/tsconfig.json",
-	"compilerOptions": {
-		"outDir": "dist"
-	},
-    "include": ["./src"]
+  "extends": "@dgtlmonk/fe-configs/tsconfig"
 }
 ```
 
@@ -26,7 +22,7 @@ When you are targeting a higher browser support, check the relevant ECMAScript v
 
 ```json
 {
-	"extends": "@perkd/fe-configs/tsconfig.json",
+	"extends": "@perkd/fe-configs/tsconfig",
 	"compilerOptions": {
 		"outDir": "dist",
 		"target": "ESNext"

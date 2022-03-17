@@ -15,17 +15,16 @@
         "@typescript-eslint/eslint-plugin": "^5.15.0",
         "@typescript-eslint/parser": "^5.15.0",
         "eslint": ">= 4",
-        "eslint-plugin-react": "^7.29.4",
-        "husky": "^7.0.4"
-    },
-    "peerDependencies": {
-        "eslint": ">= 4"
+        "eslint-plugin-react": "^7.29.4"
     },
     "main": "tsconfig.json",
     "files": [
         "tsconfig.json",
         ".prettierrc",
         "./eslint-config/*"
-    ]
+    ],
+    "scripts": {
+        "postinstall": "node bin/install.js"
+    }
 
 }
