@@ -21,6 +21,7 @@
     "peerDependencies": {
         "eslint": ">= 4"
     },
+    "main": "tsconfig.json",
     "files": [
         "tsconfig.json",
         ".prettierrc",
