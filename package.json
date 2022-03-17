@@ -8,7 +8,7 @@
         "name": "Joel Pablo",
         "email": "joel@waveo.com"
     },
-    "main": "tsconfig.json",
+    "main": "./eslint/index.js",
     "engines": {
         "node": ">=12"
     },
@@ -18,8 +18,12 @@
         "@typescript-eslint/eslint-plugin": "^5.15.0",
         "@typescript-eslint/parser": "^5.15.0"
     },
+    "peerDependencies": {
+        "eslint": ">= 4"
+    },
     "files": [
-        "tsconfig.json",
-        ".prettierrc"
+        "./tsconfig/tsconfig.json",
+        "./prettier/.prettierrc",
+        "./eslint/index.js"
     ]
 }
