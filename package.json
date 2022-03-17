@@ -24,6 +24,7 @@
     "files": [
         "./tsconfig/tsconfig.json",
         "./prettier/.prettierrc",
-        "./eslint-config/index.js"
+        "./eslint/index.js",
+        "./eslint/.eslintrc"
     ]
 }

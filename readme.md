@@ -8,7 +8,7 @@
 $ npm install --save-dev @perkd/fe-tsconfig
 ```
 
-## Usage
+## Usage & Configuration
 
 `tsconfig.json`
 
@@ -32,4 +32,10 @@ When you are targeting a higher browser support, check the relevant ECMAScript v
 		"target": "ESNext"
 	}
 }
+```
+
+`.eslintrc`
+
+```bash
+ln -s node_modules/@dgtlmonk/fe-configs/eslint/.eslintrc
 ```
