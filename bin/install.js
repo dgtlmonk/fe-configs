@@ -10,11 +10,8 @@ const __dirname = path.dirname(fileURLToPath(
 
 const module = "@dgtlmonk/fe-configs/tsconfig"
 
-const TSCONFIG_JSON_CONTENT = `{
+const TSCONFIG_JSON = `{
   "extends": "${module}",
-  "compilerOptions": {
-    "outDir": "dist",
-  },
   "exclude": [
     "node_modules/",
     "dist/",
@@ -22,6 +19,27 @@ const TSCONFIG_JSON_CONTENT = `{
   ],
 }
 `
+
+const PRETTIER_JSON = `{
+    "arrowParens": "avoid",
+    "bracketSpacing": false,
+    "htmlWhitespaceSensitivity": "css",
+    "insertPragma": false,
+    "jsxBracketSameLine": false,
+    "jsxSingleQuote": false,
+    "printWidth": 100,
+    "proseWrap": "always",
+    "quoteProps": "as-needed",
+    "requirePragma": false,
+    "semi": false,
+    "singleQuote": true,
+    "tabWidth": 4,
+    "trailingComma": "all",
+    "useTabs": false
+}
+`
+
+
 
 async function main() {
     const cwd = path.join(__dirname, '..', '..')
@@ -32,13 +50,21 @@ async function main() {
     const pkgDir = path.dirname(pkg)
 
     const tsconfigFile = path.join(pkgDir, 'tsconfig.json')
+    const prettierFile = path.join(pkgDir, 'prettier.json')
 
     if (!fs.existsSync(tsconfigFile)) {
         console.info(`${module}: auto generated ${tsconfigFile}`)
-        fs.writeFileSync(tsconfigFile, TSCONFIG_JSON_CONTENT)
+        fs.writeFileSync(tsconfigFile, TSCONFIG_JSON)
     }
+
+    if (!fs.existsSync(prettierFile)) {
+        console.info(`${module}: auto generated prettier.json`)
+        fs.writeFileSync(tsconfigFile, PRETTIER_JSON)
+    }
+
     return 0
 }
+
 
 main()
     .then(process.exit)

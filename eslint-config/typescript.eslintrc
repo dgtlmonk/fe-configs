@@ -1,5 +1,0 @@
-{
-    "extends": [
-        "@dgtlmonk/fe-configs/eslint/typescript"
-    ]
-}
