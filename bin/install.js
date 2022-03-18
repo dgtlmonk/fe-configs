@@ -20,24 +20,32 @@ const TSCONFIG_JSON = `{
 }
 `
 
-const PRETTIER_JSON = `{
-    "arrowParens": "avoid",
-    "bracketSpacing": false,
-    "htmlWhitespaceSensitivity": "css",
-    "insertPragma": false,
-    "jsxBracketSameLine": false,
-    "jsxSingleQuote": false,
-    "printWidth": 100,
-    "proseWrap": "always",
-    "quoteProps": "as-needed",
-    "requirePragma": false,
-    "semi": false,
-    "singleQuote": true,
-    "tabWidth": 4,
-    "trailingComma": "all",
-    "useTabs": false
-}
-`
+// const PRETTIER_JSON = `{
+//     "arrowParens": "avoid",
+//     "bracketSpacing": false,
+//     "insertPragma": false,
+//     "jsxBracketSameLine": false,
+//     "jsxSingleQuote": false,
+//     "printWidth": 100,
+//     // support all quirky Markdown renderers in the wild. 
+//     "proseWrap": "always",
+//     "quoteProps": "as-needed",
+//     "requirePragma": false,
+//     "semi": false,
+//     "singleQuote": true,
+//     "tabWidth": 4,
+//     "trailingComma": "all",
+//     "useTabs": false
+// }
+// `
+
+const PRETTIER_JS = `{
+    module.exports = {
+        ...require('@dgtlmonk/fe-configs/prettier.json),
+        semi: false
+    }
+
+}`
 
 
 
@@ -50,7 +58,7 @@ async function main() {
     const pkgDir = path.dirname(pkg)
 
     const tsconfigFile = path.join(pkgDir, 'tsconfig.json')
-    const prettierFile = path.join(pkgDir, 'prettier.json')
+    const prettierFile = path.join(pkgDir, '.prettier.js')
 
     if (!fs.existsSync(tsconfigFile)) {
         console.info(`${module}: auto generated ${tsconfigFile}`)
@@ -59,7 +67,7 @@ async function main() {
 
     if (!fs.existsSync(prettierFile)) {
         console.info(`${module}: auto generated prettier.json`)
-        fs.writeFileSync(prettierFile, PRETTIER_JSON)
+        fs.writeFileSync(prettierFile, PRETTIER_JS)
     }
 
     return 0
