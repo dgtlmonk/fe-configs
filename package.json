@@ -27,5 +27,9 @@
     ],
     "scripts": {
         "postinstall": "node bin/install.js"
+    },
+
+    "peerDependencies": {
+        "prettier": ">= 2"
     }
 }

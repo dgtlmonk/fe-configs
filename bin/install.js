@@ -39,13 +39,10 @@ const TSCONFIG_JSON = `{
 // }
 // `
 
-const PRETTIER_JS = `{
-    module.exports = {
-        ...require('@dgtlmonk/fe-configs/prettier.json),
-        semi: false
-    }
-
-}`
+const PRETTIER_JS = `module.exports = {
+    ...require("@dgtlmonk/fe-configs/prettier.json"),
+    semi: false,
+};`
 
 
 
