@@ -59,7 +59,7 @@ async function main() {
 
     if (!fs.existsSync(prettierFile)) {
         console.info(`${module}: auto generated prettier.json`)
-        fs.writeFileSync(tsconfigFile, PRETTIER_JSON)
+        fs.writeFileSync(prettierFile, PRETTIER_JSON)
     }
 
     return 0
